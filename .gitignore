@@ -1,0 +1,41 @@
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dossiers temporaires
+*.tmp
+*.log
+*.swp
+
+# Environnements virtuels
+env/
+venv/
+.venv/
+
+# DVC cache local (mais pas les fichiers .dvc)
+.dvc/cache/
+
+# MLflow local tracking
+# On ignore les runs locaux mais on garde l'architecture
+experiments/**/mlruns/
+
+# Fichiers de sortie temporaire
+*.h5
+*.ckpt
+*.pt
+*.keras
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Fichiers système (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Données brutes lourdes (optionnel si géré par DVC)
+data/raw/
+data/external/
+data/processed/
+
